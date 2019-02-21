@@ -7,7 +7,7 @@ export default function(Vue, { head }) {
 
   head.link.push({
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css?family=Patrick+Hand|Signika"
+    href: "https://fonts.googleapis.com/css?family=Patrick+Hand|Quicksand"
   });
 
   head.meta.push({
