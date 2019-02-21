@@ -1,18 +1,23 @@
 <template>
   <div class="mw7 pa4 center">
     <header class="tc">
-      <div class="db">
+      <div class="db mb4">
         <g-link class="pa2 link fw7" :to="{ name: 'home' }">
-          <img src="../assets/icon.svg" class="w3 mb4">
+          <img src="../assets/icon.svg" class="w3">
         </g-link>
       </div>
-      <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'home' }">home</g-link>
-      <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'blog' }">blog</g-link>
-      <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'contact' }">contact</g-link>
+      <nav class="mb3">
+        <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'blog' }">blog</g-link>
+        <!-- <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'resume' }">resume</g-link> -->
+        <g-link class="pa2 link f4 fw7 dark-gray black-hover" :to="{ name: 'contact' }">contact</g-link>
+      </nav>
     </header>
-    <div class>
+    <main>
+      <div v-show="pageName == 'home'">
+        <h1 class="tc pa2">{{ pageName }}</h1>
+      </div>
       <slot/>
-    </div>
+    </main>
     <footer class="tc">
       <p>&copy; Matt Ondo</p>
     </footer>

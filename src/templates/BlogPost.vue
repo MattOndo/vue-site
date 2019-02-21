@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="article">
-      <h1 class="tc pa2 bg-blue white">{{ $page.blogPost.title }}</h1>
+      <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
       <g-image :src="$page.blogPost.image"/>
       <div class="content" v-html="$page.blogPost.content"/>

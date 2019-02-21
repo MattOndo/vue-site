@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <h1 class="tc pa2 bg-blue white">Blog</h1>
     <ul class="list pa0">
       <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
         <div>

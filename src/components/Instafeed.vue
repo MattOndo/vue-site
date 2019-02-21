@@ -50,7 +50,7 @@ figcaption {
   top: 50%;
   transform: translateY(-50%);
   z-index: 999999;
-  padding: 2rem;
+  padding: 1rem;
   color: #ffffff;
   transition: opacity 500ms ease;
 }

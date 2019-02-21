@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <header class="tc">
-      <h1 class="tc pa2 bg-blue white">Matt Ondo</h1>
       <h3 class="mv0 fw1">&lt;Web Developer /&gt;</h3>
       <h4 class="mt0 fw1">Denver, CO, USA</h4>
     </header>
