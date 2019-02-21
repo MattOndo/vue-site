@@ -1,12 +1,12 @@
 <template>
   <Layout>
     <form
-      @submit="handleSubmit"
       @change="handleChange($event)"
       class="measure center"
       name="contact"
       method="POST"
       data-netlify="true"
+      action="/contact-thanks"
     >
       <div v-show="isSending">Sending...</div>
       <div>
