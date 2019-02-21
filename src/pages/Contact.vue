@@ -1,14 +1,14 @@
 <template>
   <Layout>
     <form
-      @submit.prevent="handleSubmit"
+      @submit="handleSubmit"
       @change="handleChange($event)"
       class="measure center"
       name="contact"
       method="POST"
       data-netlify="true"
     >
-      <div v-show="isSending">Sendig...</div>
+      <div v-show="isSending">Sending...</div>
       <div>
         <label for="name" class="f6 b db mb1">Name</label>
         <input
