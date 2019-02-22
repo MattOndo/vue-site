@@ -14,9 +14,9 @@ export default {
   metaInfo() {
     return {
       title: this.$page.blogPost.title
-    };
+    }
   }
-};
+}
 </script>
 
 <page-query>

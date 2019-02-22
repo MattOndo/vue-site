@@ -35,10 +35,10 @@
 
 <script>
 export default {
-  name: "Blog",
+  name: 'Blog',
   metaInfo: {
-    title: "Matt Ondo's Blog",
-    meta: [{ name: "description", content: "Matt Ondo's Blog" }]
+    title: 'Blog',
+    meta: [{ name: 'description', content: "Matt Ondo's Blog" }]
   }
-};
+}
 </script>

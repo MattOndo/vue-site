@@ -9,10 +9,10 @@
 
 <script>
 export default {
-  name: "Resume",
+  name: 'Resume',
   metaInfo: {
-    title: "Matt Ondo's Resume",
-    meta: [{ name: "description", content: "Matt Ondo's Resume" }]
+    title: 'Resume',
+    meta: [{ name: 'description', content: "Matt Ondo's Resume" }]
   }
-};
+}
 </script>

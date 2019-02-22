@@ -7,12 +7,12 @@
 
 <script>
 export default {
-  name: "ContactMatt",
+  name: 'ContactMatt',
   metaInfo: {
-    title: "Contact Matt Ondo",
-    meta: [{ name: "description", content: "Contact Matt Ondo" }]
+    title: 'Contact',
+    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
   }
-};
+}
 </script>
 
 <style scoped>

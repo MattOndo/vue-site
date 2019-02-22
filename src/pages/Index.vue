@@ -16,9 +16,16 @@
             class="aspect-ratio--object cover bg-center"
             :style="`background:url(${gram.images.standard_resolution.url})`"
           >
-            <div class="hover-bg-black-50 white pa2 h-100 overflow-x-hidden overflow-y-auto">
-              <p v-text="gram.caption.text" class="ma0 dn"/>
-              <span v-text="gram.likes.count" class="dn"/>
+            <div
+              class="hover-bg-black-50 hide-child white pa3 h-100 overflow-x-hidden overflow-y-auto"
+            >
+              <div class="child">
+                <p v-text="gram.caption.text" class="ma0 mb2 pb3"/>
+                <span class="dib pa2 bg-white br2 absolute bottom-1 right-1 black f7">
+                  ❤️&nbsp;
+                  <span v-text="gram.likes.count"/>
+                </span>
+              </div>
             </div>
           </div>
         </a>
@@ -32,10 +39,6 @@
   display: grid;
   grid-template-columns: auto;
 }
-.hover-bg-black-50:hover p,
-.hover-bg-black-50:hover span {
-  display: block;
-}
 @media screen and (min-width: 768px) {
   .grid {
     grid-template-columns: auto auto auto;
@@ -44,55 +47,59 @@
 </style>
 
 <script>
-import axios from "axios";
-import VueAxios from "vue-axios";
+import axios from 'axios'
+// import VueAxios from 'vue-axios'
 
 export default {
   data() {
     return {
-      access_token: "2269121656.4665d35.c915a5e17ca4454d9897dcec6465fbbf",
-      url: "https://api.instagram.com/v1/users/self/media/recent/",
-      username: "matt_ondo",
+      access_token: '2269121656.4665d35.c915a5e17ca4454d9897dcec6465fbbf',
+      url: 'https://api.instagram.com/v1/users/self/media/recent/',
+      username: 'matt_ondo',
       grams: [],
-      next_url: "",
+      next_url: '',
       error: false
-    };
+    }
+  },
+  metaInfo: {
+    title: 'Home',
+    meta: [{ name: 'description', content: 'Matt Ondo' }]
   },
   computed: {
     instapage() {
-      return "https://www.instagram.com/" + this.username;
+      return `https://www.instagram.com/${this.username}`
     }
   },
   methods: {
     getGrams() {
       axios
-        .get(this.url + "?access_token=" + this.access_token)
+        .get(`${this.url}?access_token=${this.access_token}`)
         .then(({ data }) => {
-          this.grams = data.data;
-          this.username = data.data[0].user.username;
-          this.next_url = data.pagination.next_url;
-          console.log(this.grams);
+          this.grams = data.data
+          this.username = data.data[0].user.username
+          this.next_url = data.pagination.next_url
+          console.log(this.grams)
         })
         .catch(function(error) {
-          console.log(error);
-          this.error = true;
-        });
+          console.log(error)
+          this.error = true
+        })
     },
     getMoreGrams() {
       axios
         .get(this.next_url)
         .then(({ data }) => {
-          this.grams = this.grams.concat(data.data);
-          this.next_url = data.pagination.next_url;
+          this.grams = this.grams.concat(data.data)
+          this.next_url = data.pagination.next_url
         })
-        .catch(function(error) {
-          console.log(error);
-          this.error = true;
-        });
+        .catch(error => {
+          console.log(error)
+          this.error = true
+        })
     }
   },
   created() {
-    this.getGrams();
+    this.getGrams()
   }
-};
+}
 </script>

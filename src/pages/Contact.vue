@@ -53,21 +53,21 @@
 
 <script>
 export default {
-  name: "ContactMatt",
+  name: 'ContactMatt',
   metaInfo: {
-    title: "Contact Matt Ondo",
-    meta: [{ name: "description", content: "Contact Matt Ondo" }]
+    title: 'Contact',
+    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
   },
   data() {
     return {
       contact: {
-        name: "",
-        email: "",
-        message: ""
+        name: '',
+        email: '',
+        message: ''
       },
 
       isSending: false
-    };
+    }
   },
   methods: {
     /**
@@ -75,18 +75,18 @@ export default {
      */
 
     handleSubmit(evt) {
-      evt.preventDefault();
+      evt.preventDefault()
 
-      this.isSending = true;
+      this.isSending = true
 
-      console.log(this.contact);
+      console.log(this.contact)
     },
     handleChange($event) {
       // this.contact.push({ [$event.target.name]: $event.target.value });
-      console.log(this.contact);
+      console.log(this.contact)
     }
   }
-};
+}
 </script>
 
 <style scoped>
