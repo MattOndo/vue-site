@@ -12,6 +12,7 @@ export default {
     title: 'Contact',
     meta: [
       {
+        key: 'description',
         name: 'description',
         content: 'Thanks for contacting me.'
       }

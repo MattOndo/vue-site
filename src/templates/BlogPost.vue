@@ -16,7 +16,14 @@ import GoBack from '../components/GoBack'
 export default {
   metaInfo() {
     return {
-      title: this.$page.blogPost.title
+      title: this.$page.blogPost.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.blogPost.description
+        }
+      ]
     }
   },
   components: {
@@ -32,6 +39,7 @@ export default {
       date (format: "D MMMM, YYYY")
       content
       image
+      description
     }
   }
 </page-query>

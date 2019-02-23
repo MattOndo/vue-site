@@ -14,6 +14,7 @@ export default {
     title: '404',
     meta: [
       {
+        key: 'description',
         name: 'description',
         content: '404 Not Found'
       }

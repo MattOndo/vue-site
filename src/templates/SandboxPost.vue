@@ -26,7 +26,14 @@ import GoBack from '../components/GoBack'
 export default {
   metaInfo() {
     return {
-      title: this.$page.sandboxPost.title
+      title: this.$page.sandboxPost.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.sandboxPost.description
+        }
+      ]
     }
   },
   components: {
@@ -39,6 +46,7 @@ export default {
   query SandboxPost ($path: String!) {
     sandboxPost (path: $path) {
       title
+      description
       date (format: "D MMMM, YYYY")
       content
       embedurl

@@ -41,6 +41,7 @@ export default {
     title: 'Sandbox',
     meta: [
       {
+        key: 'description',
         name: 'description',
         content:
           "Welcome to Matt Ondo's Sandbox. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
