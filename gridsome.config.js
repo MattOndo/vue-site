@@ -16,7 +16,10 @@ module.exports = {
       options: {
         path: 'sandbox/*.md',
         typeName: 'SandboxPost',
-        route: '/sandbox/:slug'
+        route: '/sandbox/:slug',
+        remark: {
+          plugins: ['@gridsome/remark-prismjs']
+        }
       }
     },
     {
@@ -44,5 +47,10 @@ module.exports = {
         }
       }
     }
-  ]
+  ],
+  transformers: {
+    remark: {
+      plugins: ['@gridsome/remark-prismjs']
+    }
+  }
 }
