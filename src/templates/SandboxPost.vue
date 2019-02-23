@@ -34,7 +34,6 @@ export default {
       date (format: "D MMMM, YYYY")
       content
       embedurl
-      image
     }
   }
 </page-query>
