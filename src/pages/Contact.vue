@@ -2,7 +2,6 @@
   <Layout>
     <form class="center" name="contact" method="POST" data-netlify="true" action="/contact-thanks">
       <h1>Contact Matt</h1>
-      <div v-show="isSending">Sending...</div>
       <div>
         <label for="name" class="f6 b db mb1">Name</label>
         <input
@@ -50,7 +49,13 @@ export default {
   name: 'ContactMatt',
   metaInfo: {
     title: 'Contact',
-    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Contact Matt Ondo. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
+      }
+    ]
   }
 }
 </script>
