@@ -1,9 +1,13 @@
 <template>
   <Layout>
-    <h1>👋 Hello!</h1>
+    <h1>👋 Hi, my name is Matt Ondo!</h1>
     <article>
-      <p>My name is Matt. I am located in Denver, CO where I spend as much time as possible out in the Rocky Mountains. In the winter you can bet your butt I'm skiing. In the summer you'll find me mountain biking, camping, hiking, and/or enjoying a classic park day.</p>
-      <p>Yes, I have a job–a pretty great one! My current post is Senior Front-end Developer at Intelligent Demand. I've been with Intelligent Demand since February, 2016. As a Senior Front-end Developer, I play a critical role in the Front-End Development practice at ID and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing and deployment of interactive content and websites using WordPress and other CMS platforms.</p>
+      <p
+        class="lh-copy"
+      >Located in Denver, CO I spend as much time as possible out in the Rocky Mountains. In the winter you can bet your butt I'm skiing. In the summer you'll find me mountain biking, camping, hiking, and/or enjoying a classic park day.</p>
+      <p
+        class="lh-copy"
+      >Yes, I have a job–a pretty great one! My current post is Senior Front-end Developer at Intelligent Demand. I've been with Intelligent Demand since February, 2016. As a Senior Front-end Developer, I play a critical role in the Front-End Development practice at ID and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing and deployment of interactive content and websites using WordPress and other CMS platforms.</p>
     </article>
     <div class="grid">
       <div v-for="(gram, i) in grams" :key="i">
@@ -12,9 +16,7 @@
             class="aspect-ratio--object cover bg-center"
             :style="`background:url(${gram.images.standard_resolution.url})`"
           >
-            <div
-              class="hover-bg-black-50 hide-child white pa3 h-100 overflow-x-hidden overflow-y-auto"
-            >
+            <div class="item hover-bg-black-50 hide-child white pa3 h-100 overflow-hidden">
               <div class="child">
                 <p v-text="gram.caption.text" class="ma0 mb2 pb3"/>
                 <span class="dib pa2 bg-white br2 absolute bottom-1 right-1 black f7">
@@ -35,6 +37,9 @@
   display: grid;
   grid-template-columns: auto;
 }
+.item:hover {
+  overflow-y: auto;
+}
 @media screen and (min-width: 768px) {
   .grid {
     grid-template-columns: auto auto auto;
@@ -47,6 +52,10 @@ import axios from 'axios'
 // import VueAxios from 'vue-axios'
 
 export default {
+  metaInfo: {
+    title: 'Welcome',
+    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
+  },
   data() {
     return {
       access_token: '2269121656.4665d35.c915a5e17ca4454d9897dcec6465fbbf',
@@ -56,10 +65,6 @@ export default {
       next_url: '',
       error: false
     }
-  },
-  metaInfo: {
-    title: 'Home',
-    meta: [{ name: 'description', content: 'Matt Ondo' }]
   },
   computed: {
     instapage() {
