@@ -4,7 +4,7 @@
     <ul class="list pa0 ma0">
       <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id" class="pt3 pb4">
         <div class="mb2">
-          <router-link :to="node.path" class="dib no-underline pointer grow">
+          <router-link :to="node.path" class="dib no-underline black pointer grow">
             <h2 v-html="node.title" class="mb1 mb2-ns mr1 mr3-ns"/>
           </router-link>
           <span v-html="node.date" class="dib"/>
