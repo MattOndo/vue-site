@@ -1,13 +1,6 @@
 <template>
   <Layout>
-    <form
-      @change="handleChange($event)"
-      class="measure center"
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      action="/contact-thanks"
-    >
+    <form class="center" name="contact" method="POST" data-netlify="true" action="/contact-thanks">
       <h1>Contact Matt</h1>
       <div v-show="isSending">Sending...</div>
       <div>
@@ -58,34 +51,6 @@ export default {
   metaInfo: {
     title: 'Contact',
     meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
-  },
-  data() {
-    return {
-      contact: {
-        name: '',
-        email: '',
-        message: ''
-      },
-
-      isSending: false
-    }
-  },
-  methods: {
-    /**
-     * Handler for submit
-     */
-
-    handleSubmit(evt) {
-      evt.preventDefault()
-
-      this.isSending = true
-
-      console.log(this.contact)
-    },
-    handleChange($event) {
-      // this.contact.push({ [$event.target.name]: $event.target.value });
-      console.log(this.contact)
-    }
   }
 }
 </script>
