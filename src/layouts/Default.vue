@@ -1,14 +1,14 @@
 <template>
-  <div class="mw8 pa2 pa0-l center">
+  <div class="mw8 pa3 pa0-l center">
     <header>
       <button
         id="darkModeToggle"
         @click="toggleDarkMode"
         v-text="`${darkModeToggleText}`"
-        class="pointer absolute fixed-l right-0 top-0 pa4 f6 input-reset button-reset bg-transparent bw0 outline-0 black-50"
+        class="pointer absolute fixed-l right-0 top-0 pa3 pa4-l f6 input-reset button-reset bg-transparent bw0 outline-0 black-50"
       />
       <div class="vh-50 flex flex-column flex-row-ns items-center justify-center justify-end-ns">
-        <nav class="order-1 order-0-ns">
+        <nav class="order-1 order-0-ns tc">
           <g-link
             class="pa2 no-underline f5 f4-l fw3 ttl dark-gray black-hover dib"
             :to="{ name: 'home' }"
