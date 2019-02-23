@@ -28,11 +28,11 @@ module.exports = {
         cacheTime: 600000, // default
         exclude: ['/exclude-me'],
         config: {
-          '/blog/*': {
+          '/blog': {
             changefreq: 'weekly',
             priority: 0.5
           },
-          '/sandbox/*': {
+          '/sandbox': {
             changefreq: 'weekly',
             priority: 0.5
           },
@@ -43,6 +43,14 @@ module.exports = {
           '/contact': {
             changefreq: 'monthly',
             priority: 0.7
+          },
+          '/blog/*': {
+            changefreq: 'monthly',
+            priority: 0.5
+          },
+          '/sandbox/*': {
+            changefreq: 'monthly',
+            priority: 0.5
           }
         }
       }
