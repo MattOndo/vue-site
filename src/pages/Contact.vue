@@ -11,7 +11,6 @@
           type="text"
           aria-describedby="name-desc"
           required
-          v-model="contact.name"
         >
       </div>
       <div>
@@ -22,7 +21,6 @@
           type="email"
           aria-describedby="email-desc"
           required
-          v-model="contact.email"
         >
       </div>
       <div>
@@ -32,7 +30,6 @@
           class="input-reset ba b--black-20 pa2 mb3 db w-100"
           aria-describedby="message-desc"
           required
-          v-model="contact.message"
         ></textarea>
       </div>
       <div>
