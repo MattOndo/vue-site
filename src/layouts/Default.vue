@@ -9,17 +9,20 @@
       />
       <div class="vh-50 flex flex-column flex-row-ns items-center justify-center justify-end-ns">
         <nav class="order-1 order-0-ns">
-          <g-link class="pa2 no-underline f4 fw7 dark-gray black-hover" :to="{ name: 'home' }">home</g-link>
           <g-link
-            class="pa2 no-underline f4 fw7 dark-gray black-hover blog"
+            class="pa2 no-underline f5 f4-l fw7 dark-gray black-hover dib"
+            :to="{ name: 'home' }"
+          >home</g-link>
+          <g-link
+            class="pa2 no-underline f5 f4-l fw7 dark-gray black-hover dib blog"
             :to="{ name: 'blog' }"
           >blog</g-link>
           <g-link
-            class="pa2 no-underline f4 fw7 dark-gray black-hover sandbox"
+            class="pa2 no-underline f5 f4-l fw7 dark-gray black-hover dib sandbox"
             :to="{ name: 'sandbox' }"
           >sandbox</g-link>
           <g-link
-            class="pa2 no-underline f4 fw7 dark-gray black-hover"
+            class="pa2 no-underline f5 f4-l fw7 dark-gray black-hover dib"
             :to="{ name: 'contact' }"
           >contact</g-link>
         </nav>
