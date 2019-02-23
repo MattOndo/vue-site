@@ -10,7 +10,7 @@
       >Yes, I have a job–a pretty great one! My current post is Senior Front-end Developer at Intelligent Demand. I've been with Intelligent Demand since February, 2016. As a Senior Front-end Developer, I play a critical role in the Front-End Development practice at ID and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing and deployment of interactive content and websites using WordPress and other CMS platforms.</p>
     </article>
     <div class="grid">
-      <div v-for="(gram, i) in grams" :key="i">
+      <div v-for="(gram, i) in grams" v-if="i<=limit-1" :key="i">
         <a class="db aspect-ratio aspect-ratio--1x1" :href="gram.link" target="_blank">
           <div
             class="aspect-ratio--object cover bg-center"
@@ -54,7 +54,13 @@ import axios from 'axios'
 export default {
   metaInfo: {
     title: 'Welcome',
-    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
+    meta: [
+      {
+        name: 'description',
+        content:
+          "Welcome to Matt Ondo's website. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
+      }
+    ]
   },
   data() {
     return {
