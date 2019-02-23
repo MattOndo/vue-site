@@ -30,11 +30,13 @@
         </div>
       </div>
     </header>
-    <main>
-      <slot/>
-    </main>
+    <transition name="fade" appear>
+      <main>
+        <slot/>
+      </main>
+    </transition>
     <footer class="tc pv4 mt4">
-      <div class="f6">
+      <div class="f7">
         <a
           class="black no-underline hover-blue"
           href="https://github.com/MattOndo"
@@ -51,7 +53,7 @@
           target="_blank"
         >LinkedIn</a>
       </div>
-      <div class="flex items-center justify-center f6 mt3 w-100">
+      <div class="flex items-center justify-center f7 mt3 w-100">
         <Icon size="sm"/>
         <span>&nbsp;&nbsp;is powered by&nbsp;&nbsp;</span>
         <a href="https://gridsome.org/" target="_blank">
@@ -106,4 +108,11 @@ export default {
 
 
 <style scoped>
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
 </style>
