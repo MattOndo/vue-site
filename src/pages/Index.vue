@@ -74,7 +74,6 @@ export default {
           this.grams = data.data
           this.username = data.data[0].user.username
           this.next_url = data.pagination.next_url
-          console.log(this.grams)
         })
         .catch(function(error) {
           console.log(error)
