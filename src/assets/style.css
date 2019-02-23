@@ -48,3 +48,14 @@ a {
     background-position: -6rem -10%;
   }
 }
+
+.darkMode {
+  color: #fff;
+  background: #1d1611;
+}
+.darkMode a {
+  color: #fff;
+}
+.darkMode #darkModeToggle {
+  color: rgba(255, 255, 255, 0.5);
+}
