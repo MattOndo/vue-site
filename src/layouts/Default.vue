@@ -44,7 +44,12 @@
           class="black no-underline hover-blue"
           href="https://www.instagram.com/matt_ondo/"
           target="_blank"
-        >Instagram</a>
+        >Instagram</a> |
+        <a
+          class="black no-underline hover-blue"
+          href="https://www.linkedin.com/in/mattondo/"
+          target="_blank"
+        >LinkedIn</a>
       </div>
       <div class="flex items-center justify-center f6 mt3 w-100">
         <Icon size="sm"/>
