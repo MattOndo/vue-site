@@ -3,7 +3,7 @@ title: Hello world
 date: 2019-02-20 10:46:00
 description: "My first blog post, let's cover the basics. Who am I, and why am I doing this?"
 image: './images/sergei-akulich-457851-unsplash.jpg'
-slug: first
+slug: hello-world
 tags: 'code website'
 ---
 
@@ -65,6 +65,37 @@ Sample text here...
 ```
 
 Syntax highlighting
+
+```html
+<html>
+  <head>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
+```
+
+```scss
+.titanic {
+  float: none;
+}
+.ninja {
+  color: black;
+  visibility: hidden;
+}
+.delorean {
+  z-index: -1985;
+}
+.hobbit {
+  height: 50%;
+
+  .foot {
+    width: 200%;
+  }
+}
+```
 
 ```js
 var foo = function(bar) {
