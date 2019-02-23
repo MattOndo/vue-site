@@ -1,5 +1,5 @@
 <template>
-  <div class="mw8 pa4 center">
+  <div class="mw8 pa2 pa0-l center">
     <header>
       <button
         id="darkModeToggle"
