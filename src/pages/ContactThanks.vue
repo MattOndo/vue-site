@@ -10,7 +10,12 @@ export default {
   name: 'ContactMatt',
   metaInfo: {
     title: 'Contact',
-    meta: [{ name: 'description', content: 'Contact Matt Ondo' }]
+    meta: [
+      {
+        name: 'description',
+        content: 'Thanks for contacting me.'
+      }
+    ]
   }
 }
 </script>
