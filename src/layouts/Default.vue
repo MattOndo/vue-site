@@ -9,6 +9,10 @@
             :to="{ name: 'blog' }"
           >blog</g-link>
           <g-link
+            class="pa2 no-underline f4 fw7 dark-gray black-hover sandbox"
+            :to="{ name: 'sandbox' }"
+          >sandbox</g-link>
+          <g-link
             class="pa2 no-underline f4 fw7 dark-gray black-hover"
             :to="{ name: 'contact' }"
           >contact</g-link>
@@ -35,6 +39,13 @@
           href="https://www.instagram.com/matt_ondo/"
           target="_blank"
         >Instagram</a>
+      </div>
+      <div class="flex items-center justify-center f6 mt3 w-100">
+        <g-image src="../assets/icon.svg" class="dib w1 h1"/>
+        <span>&nbsp;&nbsp;is powered by&nbsp;&nbsp;</span>
+        <a href="https://gridsome.org/" target="_blank">
+          <g-image src="../assets/gridsome.png" class="dib w1 h1"/>
+        </a>
       </div>
       <p class="f7 mt3 mb0">&copy; Matt Ondo</p>
     </footer>
