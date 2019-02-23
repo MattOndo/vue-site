@@ -4,7 +4,7 @@
     <ul class="list pa0 ma0">
       <li v-for="{ node } in $page.allSandboxPost.edges" :key="node._id" class="pt3 pb4">
         <div class="mb2">
-          <router-link :to="node.path" class="dib link dim blue">
+          <router-link :to="node.path" class="dib black no-underline pointer grow">
             <h2 v-html="node.title" class="mb1 mb2-ns mr1 mr3-ns"/>
           </router-link>
           <span v-html="node.date" class="dib"/>
