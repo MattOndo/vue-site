@@ -18,7 +18,20 @@ export default {
         name: 'description',
         content: '404 Not Found'
       }
-    ]
+    ],
+    script: [
+      {
+        key: 'structuredData',
+        type: 'application/ld+json',
+        innerHTML: `{
+          '@context': 'http://schema.org/',
+          '@type': 'WebSite',
+          name: '404 Not Found - Matt Ondo',
+          url: '${window.location}'
+        }`
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   }
 }
 </script>

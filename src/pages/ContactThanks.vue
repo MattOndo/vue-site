@@ -16,7 +16,20 @@ export default {
         name: 'description',
         content: 'Thanks for contacting me.'
       }
-    ]
+    ],
+    script: [
+      {
+        key: 'structuredData',
+        type: 'application/ld+json',
+        innerHTML: `{
+          '@context': 'http://schema.org/',
+          '@type': 'WebSite',
+          name: 'Contact - Matt Ondo',
+          url: '${window.location}'
+        }`
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   }
 }
 </script>

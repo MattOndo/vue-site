@@ -33,11 +33,35 @@ export default {
           name: 'description',
           content: this.$page.sandboxPost.description
         }
-      ]
+      ],
+      script: [
+        {
+          key: 'structuredData',
+          type: 'application/ld+json',
+          innerHTML: `{
+            '@context': 'http://schema.org/',
+            '@type': 'WebSite',
+            name: 'Sandbox - Matt Ondo',
+            url: '${window.location}'
+          }`
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
     }
   },
   components: {
     BackButton: GoBack
+  },
+  mounted() {
+    let schema = document.createElement('script')
+    schema.setAttribute('type', 'application/ld+json')
+    schema.innerHTML = `{
+        "@context": "http://schema.org/",
+        "@type": "WebSite",
+        "name": "${this.$page.sandboxPost.title} - Matt Ondo",
+        "url": "${window.location}"
+      }`
+    document.head.appendChild(schema)
   }
 }
 </script>
