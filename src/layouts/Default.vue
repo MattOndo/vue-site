@@ -7,8 +7,8 @@
         v-text="`${darkModeToggleText}`"
         class="pointer absolute fixed-l right-0 top-0 pa4 f6 input-reset button-reset bg-transparent bw0 outline-0 black-50"
       />
-      <div class="vh-50 flex flex-row items-center justify-end">
-        <nav>
+      <div class="vh-50 flex flex-column flex-row-ns items-center justify-center justify-end-ns">
+        <nav class="order-1 order-0-ns">
           <g-link class="pa2 no-underline f4 fw7 dark-gray black-hover" :to="{ name: 'home' }">home</g-link>
           <g-link
             class="pa2 no-underline f4 fw7 dark-gray black-hover blog"
@@ -23,7 +23,7 @@
             :to="{ name: 'contact' }"
           >contact</g-link>
         </nav>
-        <div class>
+        <div class="order-0 order-1-ns db dib-ns">
           <g-link class="pa2 cursor fw7" :to="{ name: 'home' }">
             <Icon size="md"/>
           </g-link>
@@ -33,7 +33,7 @@
     <main>
       <slot/>
     </main>
-    <footer class="tc pv4">
+    <footer class="tc pv4 mt4">
       <div class="f6">
         <a
           class="black no-underline hover-blue"
