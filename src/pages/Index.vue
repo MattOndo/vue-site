@@ -69,7 +69,8 @@ export default {
       username: 'matt_ondo',
       grams: [],
       next_url: '',
-      error: false
+      error: false,
+      limit: 9
     }
   },
   computed: {
