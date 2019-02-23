@@ -7,6 +7,7 @@
         <label for="name" class="f6 b db mb1">Name</label>
         <input
           id="name"
+          name="name"
           class="input-reset ba b--black-20 pa2 mb3 db w-100"
           type="text"
           aria-describedby="name-desc"
@@ -17,6 +18,7 @@
         <label for="email" class="f6 b db mb1">Email Address</label>
         <input
           id="email"
+          name="email"
           class="input-reset ba b--black-20 pa2 mb3 db w-100"
           type="email"
           aria-describedby="email-desc"
@@ -27,6 +29,7 @@
         <label for="message" class="f6 b db mb1">Message</label>
         <textarea
           id="message"
+          name="message"
           class="input-reset ba b--black-20 pa2 mb3 db w-100"
           aria-describedby="message-desc"
           required
