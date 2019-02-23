@@ -37,29 +37,32 @@
 <script>
 export default {
   name: 'Blog',
-  metaInfo: {
-    title: 'Blog',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content:
-          "Welcome to Matt Ondo's Blog. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
-      }
-    ],
-    script: [
-      {
-        key: 'structuredData',
-        type: 'application/ld+json',
-        innerHTML: `{
+  metaInfo() {
+    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
+    return {
+      title: 'Blog',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content:
+            "Welcome to Matt Ondo's Blog. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
+        }
+      ],
+      script: [
+        {
+          key: 'structuredData',
+          type: 'application/ld+json',
+          innerHTML: `{
           '@context': 'http://schema.org/',
           '@type': 'WebSite',
           name: 'Blog - Matt Ondo',
-          url: '${window.location}'
+          url: '${currentUrl}'
         }`
-      }
-    ],
-    __dangerouslyDisableSanitizers: ['script']
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
   }
 }
 </script>

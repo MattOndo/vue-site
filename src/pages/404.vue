@@ -10,28 +10,31 @@
 <script>
 export default {
   name: 'ContactMatt',
-  metaInfo: {
-    title: '404',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content: '404 Not Found'
-      }
-    ],
-    script: [
-      {
-        key: 'structuredData',
-        type: 'application/ld+json',
-        innerHTML: `{
+  metaInfo() {
+    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
+    return {
+      title: '404',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: '404 Not Found'
+        }
+      ],
+      script: [
+        {
+          key: 'structuredData',
+          type: 'application/ld+json',
+          innerHTML: `{
           '@context': 'http://schema.org/',
           '@type': 'WebSite',
           name: '404 Not Found - Matt Ondo',
-          url: '${window.location}'
+          url: '${currentUrl}'
         }`
-      }
-    ],
-    __dangerouslyDisableSanitizers: ['script']
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
   }
 }
 </script>

@@ -37,29 +37,32 @@
 <script>
 export default {
   name: 'Sandbox',
-  metaInfo: {
-    title: 'Sandbox',
-    meta: [
-      {
-        key: 'description',
-        name: 'description',
-        content:
-          "Welcome to Matt Ondo's Sandbox. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
-      }
-    ],
-    script: [
-      {
-        key: 'structuredData',
-        type: 'application/ld+json',
-        innerHTML: `{
+  metaInfo() {
+    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
+    return {
+      title: 'Sandbox',
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content:
+            "Welcome to Matt Ondo's Sandbox. Matt is a front-end developer and modern marketer. Here you will find Matt's portfolio, recent work, and contact information you will learn about Matt's recent adventures."
+        }
+      ],
+      script: [
+        {
+          key: 'structuredData',
+          type: 'application/ld+json',
+          innerHTML: `{
           '@context': 'http://schema.org/',
           '@type': 'WebSite',
           name: 'Sandbox - Matt Ondo',
-          url: '${window.location}'
+          url: '${currentUrl}'
         }`
-      }
-    ],
-    __dangerouslyDisableSanitizers: ['script']
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
+    }
   }
 }
 </script>
