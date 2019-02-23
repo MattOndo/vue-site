@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article class="article">
+    <article class="sandbox article">
       <header>
         <h1 class="mb0">{{ $page.sandboxPost.title }}</h1>
         <span class="db mb3">{{ $page.sandboxPost.date }}</span>
@@ -14,15 +14,23 @@
       </div>
       <div class="content" v-html="$page.sandboxPost.content"/>
     </article>
+    <div>
+      <BackButton/>
+    </div>
   </Layout>
 </template>
 
 <script>
+import GoBack from '../components/GoBack'
+
 export default {
   metaInfo() {
     return {
       title: this.$page.sandboxPost.title
     }
+  },
+  components: {
+    BackButton: GoBack
   }
 }
 </script>
@@ -39,50 +47,4 @@ export default {
 </page-query>
 
 <style>
-/* .header {
-    margin-bottom: 70px;
-  } */
-
-.article {
-  margin-top: 15px;
-}
-
-.article img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.article a {
-  color: #357edd;
-  text-decoration: underline;
-}
-
-.article a:hover {
-  text-decoration: none;
-}
-
-.article span {
-  font-size: 80%;
-  margin-bottom: 20px;
-}
-
-.article ol,
-.article ul {
-  list-style-position: outside;
-}
-
-.article ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.article .content p:first-child {
-  margin-top: 15px;
-}
-
-.article .content p {
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
 </style>

@@ -1,20 +1,26 @@
 <template>
   <Layout>
-    <div class="article">
+    <div class="blog article">
       <h1>{{ $page.blogPost.title }}</h1>
       <span>{{ $page.blogPost.date }}</span>
       <g-image :src="$page.blogPost.image"/>
       <div class="content" v-html="$page.blogPost.content"/>
     </div>
+    <BackButton/>
   </Layout>
 </template>
 
 <script>
+import GoBack from '../components/GoBack'
+
 export default {
   metaInfo() {
     return {
       title: this.$page.blogPost.title
     }
+  },
+  components: {
+    BackButton: GoBack
   }
 }
 </script>
@@ -31,50 +37,4 @@ export default {
 </page-query>
 
 <style>
-/* .header {
-    margin-bottom: 70px;
-  } */
-
-.article {
-  margin-top: 15px;
-}
-
-.article img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.article a {
-  color: #357edd;
-  text-decoration: underline;
-}
-
-.article a:hover {
-  text-decoration: none;
-}
-
-.article span {
-  font-size: 80%;
-  margin-bottom: 20px;
-}
-
-.article ol,
-.article ul {
-  list-style-position: outside;
-}
-
-.article ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-.article .content p:first-child {
-  margin-top: 15px;
-}
-
-.article .content p {
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
 </style>
