@@ -25,6 +25,7 @@ import GoBack from '../components/GoBack'
 
 export default {
   metaInfo() {
+    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {
       title: this.$page.sandboxPost.title,
       meta: [
@@ -41,8 +42,8 @@ export default {
           innerHTML: `{
             '@context': 'http://schema.org/',
             '@type': 'WebSite',
-            name: 'Sandbox - Matt Ondo',
-            url: '${window.location}'
+            name: '${this.$page.sandboxPost.title} - Matt Ondo',
+            url: '${currentUrl}'
           }`
         }
       ],
@@ -59,7 +60,7 @@ export default {
         "@context": "http://schema.org/",
         "@type": "WebSite",
         "name": "${this.$page.sandboxPost.title} - Matt Ondo",
-        "url": "${window.location}"
+        "url": "${currentUrl}"
       }`
     document.head.appendChild(schema)
   }

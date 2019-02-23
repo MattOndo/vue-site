@@ -15,6 +15,7 @@ import GoBack from '../components/GoBack'
 
 export default {
   metaInfo() {
+    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {
       title: this.$page.blogPost.title,
       meta: [
@@ -23,7 +24,20 @@ export default {
           name: 'description',
           content: this.$page.blogPost.description
         }
-      ]
+      ],
+      script: [
+        {
+          key: 'structuredData',
+          type: 'application/ld+json',
+          innerHTML: `{
+            '@context': 'http://schema.org/',
+            '@type': 'WebSite',
+            name: '${this.$page.blogPost.title} - Matt Ondo',
+            url: '${currentUrl}'
+          }`
+        }
+      ],
+      __dangerouslyDisableSanitizers: ['script']
     }
   },
   components: {
