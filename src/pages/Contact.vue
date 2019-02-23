@@ -8,6 +8,7 @@
       data-netlify="true"
       action="/contact-thanks"
     >
+      <h1>Contact Matt</h1>
       <div v-show="isSending">Sending...</div>
       <div>
         <label for="name" class="f6 b db mb1">Name</label>

@@ -2,65 +2,78 @@
 title: Hello world
 date: 2019-02-20 10:46:00
 description: "My first blog post, let's cover the basics. Who am I, and why am I doing this?"
-image: "./images/sergei-akulich-457851-unsplash.jpg"
+image: './images/sergei-akulich-457851-unsplash.jpg'
 slug: first
-tags: "code website"
+tags: 'code website'
 ---
 
-I don't consider myself a blogger&ndash;and I never will. I definitely don't consider myself a writer by any means. I'm a developer, and after years of neglecting my own website I've decided to do something about it. You'll have to forgive me for my terrible writing skills, and the spontaneous and infrequent posting of new content here moving forward. But hey, I'm going to give it a go! So for my first post, I decided to do a little q&a. The questions are all from a very careful google search: "random Q&A questions", let's see where this goes...
+I don't consider myself a blogger&ndash;and I never will. I definitely don't consider myself a writer by any means. I'm a developer, and after years of neglecting my own website I've decided to do something about it. You'll have to forgive me for my terrible writing skills, and the spontaneous and infrequent posting of new content here moving forward. But hey, I'm going to give it a go! So for my first post, lorem ipsum.
 
-**q:** You're a new addition to the crayon box. What color would you be and why?
+# Heading 1
 
-**a:** Fuzzy Blue. I've always like blue in general, but a college professor once showed us this "fuzzy blue" color (which he named) and it's always stuck with me.
+## Heading 2
 
-**q:** How would you describe your job to a child?
+### Heading 3
 
-**a:** I tell my young family members this: "I help companies make more money by helping them find new customers. It takes a lot of work, and a whole team of people to do it, but we're pretty good at it."
+#### Heading 4
 
-**q:** What was the first concert you ever attended?
+##### Heading 5
 
-**a:** Oh boy.. I think it was Aaron Carter back in the 90s.
+###### Heading 6
 
-**q:** What was the name of your first pet?
+## Horizontal Rules
 
-**a:** First pet on my own was Enzo - he's the one in those instagram photos.
+---
 
-**q:** What was your first job?
+## Emphasis
 
-**a:** Dairy Queen
+**This is bold text**
 
-**q:** How do you replenish your energy?
+_This is italic text_
 
-**a:** Weekend trips to the mountains. Skiing, mountain biking, hiking, camping, you name it! I just love being out in the mountains, it's theraputic for me.
+~~Strikethrough~~
 
-**q:** What was your most recent tv show binge?
+## Blockquotes
 
-**a:** The Unbrella Acadamy - so good.
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
 
-**q:** What did you do for your last birthday?
+## Lists
 
-**a:** I spent it skiing Snowbird, Utah making new friends. It was an absolute blast!
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
+    - Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+- Very easy!
 
-**q:** Did you dream last night?
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
 
-**a:** Yes, I dream almost every night and can usually remember at least a bit of them. Nerd alert: I've "practiced" lucid dreaming for a long time now. Only once have I actually achieved lucid dreaming. It was very strange, and maybe lasted a couple minutes - but it was so cool. Most of the time that I become aware I'm dreaming inside a dream (which is very few times) I wake up almost immediatley.
+## Code
 
-**q:** How does music matter to you?
+Inline `code`
+Block code "fences"
 
-**a:** Music has been part of my life for as long as I can remember. Growing up my Mom introduced me to really good music - mostly classic rock some good oldies. I played percussion in my middle school band, then moved on to playing the drum set in high school. I still play today!
+```
+Sample text here...
+```
 
-**q:** Pick one, chatting or phone call?
+Syntax highlighting
 
-**a:** If by chatting this means texting - phone call. I really don't like texting. It takes way longer because I overthink everything I write. I should seriously consider hooking up a generator to my backspace key.
+```js
+var foo = function(bar) {
+  return bar++
+}
 
-**q:** Have you ever won a trophy?
+console.log(foo(5))
+```
 
-**a:** Many times, and all I had to do was participate! 😉
+## Images
 
-**q:** What is most important in life?
-
-**a:** To enjoy it to the fullest. Don't hesitate to follow your dreams, and don't ever let someone tell you you can't do something. If you want it, go get it.
-
-**q:** What makes someone a hero?
-
-**a:** Heros are every day people who perform actions which inspire others to be a better version of themself.
+![Minion](https://octodex.github.com/images/minion.png)

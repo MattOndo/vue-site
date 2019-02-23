@@ -9,7 +9,7 @@ export default function(Vue, { head }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Patrick+Hand|Quicksand'
+    href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'
   })
 
   head.meta.push({

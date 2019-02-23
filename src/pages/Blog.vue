@@ -1,7 +1,8 @@
 <template>
   <Layout>
-    <ul class="list pa0">
-      <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id">
+    <h1>Matt's Posts</h1>
+    <ul class="list pa0 ma0">
+      <li v-for="{ node } in $page.allBlogPost.edges" :key="node._id" class="pv6">
         <div>
           <router-link :to="node.path" class="dib link dim blue">
             <h2 v-html="node.title"/>
