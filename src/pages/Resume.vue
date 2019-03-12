@@ -90,7 +90,6 @@
 
 <script>
 export default {
-  name: 'Resume',
   metaInfo() {
     let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {

@@ -43,7 +43,6 @@
 
 <script>
 export default {
-  name: 'ContactMatt',
   metaInfo() {
     let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {

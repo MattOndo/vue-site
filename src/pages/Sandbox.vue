@@ -36,7 +36,6 @@
 
 <script>
 export default {
-  name: 'Sandbox',
   metaInfo() {
     let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {
