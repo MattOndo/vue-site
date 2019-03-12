@@ -9,7 +9,9 @@
         <iframe
           class="aspect-ratio--object cover"
           frameborder="0"
-          :src="$page.sandboxPost.embedurl"
+          :src="`https://codepen.io/TheMattOndo/embed/${
+        this.$page.sandboxPost.codePenId
+      }/?theme-id=dark&default-tab=css,result`"
         />
       </div>
       <div class="content" v-html="$page.sandboxPost.content"/>
@@ -22,10 +24,15 @@
 
 <script>
 import GoBack from '../components/GoBack'
+import { log } from 'util'
 
 export default {
+  data() {
+    return {
+      currentUrl: `https://mattondo.io${this.$route.fullPath}`
+    }
+  },
   metaInfo() {
-    let currentUrl = `https://mattondo.io${this.$route.fullPath}`
     return {
       title: this.$page.sandboxPost.title,
       meta: [
@@ -43,7 +50,7 @@ export default {
             '@context': 'http://schema.org/',
             '@type': 'WebSite',
             name: '${this.$page.sandboxPost.title} - Matt Ondo',
-            url: '${currentUrl}'
+            url: '${this.currentUrl}'
           }`
         }
       ],
@@ -60,7 +67,7 @@ export default {
         "@context": "http://schema.org/",
         "@type": "WebSite",
         "name": "${this.$page.sandboxPost.title} - Matt Ondo",
-        "url": "${currentUrl}"
+        "url": "${this.currentUrl}"
       }`
     document.head.appendChild(schema)
   }
@@ -74,7 +81,7 @@ export default {
       description
       date (format: "D MMMM, YYYY")
       content
-      embedurl
+      codePenId
     }
   }
 </page-query>
