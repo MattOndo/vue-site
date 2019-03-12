@@ -4,10 +4,13 @@
     <article>
       <p
         class="lh-copy"
-      >Located in Denver, CO I spend as much time as possible out in the Rocky Mountains. In the winter you can bet your butt I'm skiing. In the summer you'll find me mountain biking, camping, hiking, and/or enjoying a classic park day.</p>
+      >Located in Denver, CO I spend as much time as possible playing in the Rocky Mountains. In the winter you can find me out on the slopes skiing. In the summer I enjoy mountain biking, camping, hiking, anything that gets me in the sun.</p>
       <p
         class="lh-copy"
-      >Yes, I have a job–a pretty great one! My current post is Senior Front-end Developer at Intelligent Demand. I've been with Intelligent Demand since February, 2016. As a Senior Front-end Developer, I play a critical role in the Front-End Development practice at ID and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing and deployment of interactive content and websites using WordPress and other CMS platforms.</p>
+      >When I'm not playing in the mountains I'm geeking out. Currently I am the Senior Front-End Developer at Intelligent Demand where I've been employed since February, 2016. As a Senior Front-End Developer, I play a critical role in the Front-End Development practice area and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing, and deployment of interactive content and websites using WordPress and other Interactive and CMS platforms.</p>
+      <p
+        class="lh-copy"
+      >Most recently I've been fiddling around with the Vue.js framework and Gridsome static site generator – this website is built using this very stack.</p>
     </article>
     <div class="grid">
       <div v-for="(gram, i) in grams" v-if="i<=limit-1" :key="i">
