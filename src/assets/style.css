@@ -378,6 +378,8 @@ summary {
 
 code[class*='language-'],
 pre[class*='language-'] {
+  display: block;
+  width: 100%;
   cursor: text;
   direction: ltr;
   font-family: monospace;
