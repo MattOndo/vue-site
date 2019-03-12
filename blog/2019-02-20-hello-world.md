@@ -1,10 +1,11 @@
 ---
-title: Hello world
-date: 2019-02-20 10:46:00
+title: Hello World
+date: 2019-03-12 10:46:00
 description: "My first blog post, let's cover the basics. Who am I, and why am I doing this?"
 image: './images/sergei-akulich-457851-unsplash.jpg'
 slug: hello-world
 tags: 'code website'
+status: 'published'
 ---
 
 I don't consider myself a blogger&ndash;and I never will. I definitely don't consider myself a writer by any means. I'm a developer, and after years of neglecting my own website I've decided to do something about it. You'll have to forgive me for my terrible writing skills, and the spontaneous and infrequent posting of new content here moving forward. But hey, I'm going to give it a go! So for my first post, lorem ipsum.

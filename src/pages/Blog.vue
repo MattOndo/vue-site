@@ -17,14 +17,15 @@
 
 <page-query>
   query Blog ($page: Int) {
-    allBlogPost (page: $page) {
+    allBlogPost (page: $page, filter: { status: { eq: "published" }}) {
       edges {
         node {
-          _id
+          id
           title
           date (format: "D MMMM, YYYY")
           description
           path
+          status
         }
       }
     }
