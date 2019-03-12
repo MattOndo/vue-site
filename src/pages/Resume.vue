@@ -2,19 +2,13 @@
   <Layout>
     <header>
       <h1 class="mb1">Matt Ondo</h1>
-      <p class="mv0 f3 fw1">
-        Senior Front-End Developer at
-        <a
-          href="https://intelligentdemand.com/"
-          target="_blank"
-        >Intelligent Demand</a>
-      </p>
-      <p class="mt1 f4 fw1">Denver, CO</p>
+      <p class="mv0 f5 fw1">Web Developer</p>
+      <p class="mt0 f6 fw1">Denver, CO</p>
     </header>
 
     <section id="experience">
       <header>
-        <h2>Experience</h2>
+        <h2 class="mb1">Experience</h2>
       </header>
       <article>
         <header>
@@ -41,7 +35,7 @@
 
     <section id="education">
       <header>
-        <h2>Education</h2>
+        <h2 class="mb1">Education</h2>
       </header>
       <article>
         <h3 class="mb0">Clarion University of Pennsylvania</h3>
@@ -52,7 +46,7 @@
 
     <section id="volunteer">
       <header>
-        <h2>Volunteer Experience</h2>
+        <h2 class="mb1">Volunteer Experience</h2>
       </header>
       <article>
         <h3 class="mb0">Volunteer Firefighter, Sadsburyvill Fire Co. No. 1</h3>
@@ -62,17 +56,17 @@
 
     <section id="certifications">
       <header>
-        <h2>Certifications</h2>
+        <h2 class="mb1">Certifications</h2>
       </header>
       <article>
         <h3 class="mb0">Marketo Certified Expert</h3>
-        <p class="mt1">2015-Present</p>
-        <a href target="_blank">View ↗️</a>
+        <span class="mt1 mb0">2015-Present</span>
+        <a class="ml1" href target="_blank">View ↗️</a>
       </article>
       <article>
-        <h3 class="mb0">ion Certification</h3>
-        <p class="mt1">2017-Present</p>
-        <a href target="_blank">View ↗️</a>
+        <h3 class="mt1 mb0">ion Certification</h3>
+        <span class="mt1 mb0">2017-Present</span>
+        <a class="ml1" href target="_blank">View ↗️</a>
       </article>
     </section>
 
@@ -116,6 +110,10 @@ export default {
       ],
       __dangerouslyDisableSanitizers: ['script']
     }
+  },
+  mounted() {
+    document.querySelector('body').classList.remove('darkMode')
+    document.querySelector('#darkModeToggle').style.display = 'none'
   }
 }
 </script>
@@ -139,6 +137,8 @@ section article {
   }
   body {
     font-size: 14px;
+    padding: 0 50px;
+    background-repeat: no-repeat;
   }
   @page {
     margin: 0;
