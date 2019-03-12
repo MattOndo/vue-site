@@ -625,3 +625,10 @@ pre[class*='language-']::-webkit-scrollbar-thumb {
   background: #ffffff66;
   color: #1d1611;
 }
+
+.darkMode .dm-bg-black {
+  background-color: #1d1611;
+}
+.darkMode .dm-white {
+  color: #fff;
+}

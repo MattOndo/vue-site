@@ -19,7 +19,9 @@
             <div class="item hover-bg-black-50 hide-child white pa3 h-100 overflow-hidden">
               <div class="child">
                 <p v-text="gram.caption.text" class="ma0 mb2 pb3"/>
-                <span class="dib pa2 bg-white br2 absolute bottom-1 right-1 black f7">
+                <span
+                  class="dib pa2 bg-white br2 absolute bottom-1 right-1 black f7 dm-bg-black dm-white"
+                >
                   ❤️&nbsp;
                   <span v-text="gram.likes.count"/>
                 </span>
