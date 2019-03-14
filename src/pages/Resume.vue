@@ -61,12 +61,17 @@
       <article>
         <h3 class="mb0">Marketo Certified Expert</h3>
         <span class="mt1 mb0">2015-Present</span>
-        <a class="ml1" href target="_blank">View ↗️</a>
+        <a class="link ml2" href="/documents/marketo-certified-expert.pdf" target="_blank">View ↗️</a>
       </article>
       <article>
-        <h3 class="mt1 mb0">ion Certification</h3>
+        <h3 class="mt1 mb0">ion Interactive Certification</h3>
         <span class="mt1 mb0">2017-Present</span>
-        <a class="ml1" href target="_blank">View ↗️</a>
+        <a class="link ml2" href="/documents/ion-certification.pdf" target="_blank">View ↗️</a>
+      </article>
+      <article>
+        <h3 class="mt1 mb0">ion Interactive Expert</h3>
+        <span class="mt1 mb0">2017-Present</span>
+        <a class="link ml2" href="/documents/ion-expert-completed.pdf" target="_blank">View ↗️</a>
       </article>
     </section>
 
