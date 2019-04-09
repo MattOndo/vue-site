@@ -345,7 +345,8 @@ summary {
 
 .active--exact,
 .blog.active,
-.sandbox.active {
+.sandbox.active,
+.portfolio.active {
   text-decoration: underline;
   text-decoration-style: wavy;
   text-decoration-color: #20639b;
