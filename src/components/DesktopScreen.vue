@@ -2,16 +2,16 @@
   <div class="desktop-wrap w-100 bg-dark-gray ba bw1 b--dark-gray br--top br3">
     <div class="desktop-topbar h1 flex flex-row items-center">
       <span
-        class="dib bg-light-gray ba bw1 b--light-gray br br-100 mh1"
-        style="height:.5rem;width:.5rem;"
+        class="dib bg-light-gray ba bw1 b--light-gray br br-100 ml1"
+        style="height:12px;width:12px;"
       ></span>
       <span
         class="dib bg-light-gray ba bw1 b--light-gray br br-100 mh1"
-        style="height:.5rem;width:.5rem;"
+        style="height:12px;width:12px;"
       ></span>
       <span
-        class="dib bg-light-gray ba bw1 b--light-gray br br-100 mh1"
-        style="height:.5rem;width:.5rem;"
+        class="dib bg-light-gray ba bw1 b--light-gray br br-100"
+        style="height:12px;width:12px;"
       ></span>
     </div>
     <div class="desktop-screen">
