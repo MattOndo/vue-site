@@ -1,7 +1,7 @@
 <template>
   <div class="mobile-wrap w-100">
-    <div class="mobile-screen bg-dark-gray" style="border-radius: 1.5rem;">
-      <img :src="src" class="ba bw2 b--dark-gray" style="border-radius: 1.5rem;">
+    <div class="mobile-screen bg-dark-gray" style="border-radius: 1rem;">
+      <img :src="src" class="ba bw2 b--dark-gray" style="border-radius: 1rem;">
     </div>
   </div>
 </template>
