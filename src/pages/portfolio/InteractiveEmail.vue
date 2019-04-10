@@ -3,8 +3,8 @@
     <header class="cf">
       <h1 class="mb0">Interactive Email</h1>
       <div class="mb3">
-        <span class="f7 fw1">Email Development</span> //
-        <span class="f7 fw1">Developer</span> //
+        <span class="f7 fw1">Marketo Email</span> //
+        <span class="f7 fw1">Front-end Developer</span> //
         <span class="f7 fw1">2017</span>
       </div>
     </header>
@@ -38,7 +38,17 @@
         </p>
       </article>
       <figure class="ma0 w-90 center w-20-ns z-999">
-        <MobileScreen src="/portfolio-assets/id_2017_interactive_holiday_mobile.png"/>
+        <div
+          style="
+          position: -webkit-sticky;
+          position: sticky;
+          top: 30px;"
+        >
+          <MobileScreen
+            src="/portfolio-assets/id_2017_interactive_holiday_mobile.png"
+            scroll="true"
+          />
+        </div>
       </figure>
     </div>
     <div class="mt3">

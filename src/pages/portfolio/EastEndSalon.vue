@@ -10,7 +10,7 @@
     </header>
 
     <figure class="ma0">
-      <DesktopScreen src="/portfolio-assets/east_end_homepage.png" type="image"/>
+      <DesktopScreen src="/portfolio-assets/east_end_homepage.jpg" type="image"/>
     </figure>
 
     <div class="w-100 flex flex-column flex-row-ns justify-between items-center">
