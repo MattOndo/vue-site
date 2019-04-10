@@ -2,42 +2,42 @@
   <Layout>
     <h1>Matt's Portfolio</h1>
     <div class="grid">
-      <a href="/portfolio/interactive-email" class="tc link black grow">
+      <a href="/portfolio/interactive-email" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/id_2017_interactive_holiday_thumb.png"/>
         <h4>Interactive Invite Email</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="#" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/intelligentdemand_landing.png"/>
         <h4>Intelligent Demand Website</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
-        <DesktopScreen type="image" src/>
+      <a href="/portfolio/interactive-infographic" class="tc link black">
+        <DesktopScreen type="image" src="/portfolio-assets/chgh_interactive_infographic.jpg"/>
         <h4>Interactive Infographic</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="#" class="tc link black">
         <DesktopScreen type="image" src/>
         <h4>Hubspot Landing Page Template</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="/portfolio/service-source-en" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/servicesource_en.jpg"/>
         <h4>Service Source Website</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="/portfolio/service-source-jp" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/servicesource_jp.jpg"/>
         <h4>Service Source Japanese Website</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="#" class="tc link black">
         <DesktopScreen type="image" src/>
         <h4>Interactive Assessment</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="#" class="tc link black">
         <DesktopScreen
           type="image"
           src="/portfolio-assets/id_marketo_email_template_desktop_top.png"
@@ -45,17 +45,17 @@
         <h4>Marketo Email Template</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="#" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/id_2018_holiday_lp.png"/>
         <h4>Interactive Story Book</h4>
       </a>
 
-      <a href="/portfolio/east-end-salon" class="tc link black grow">
-        <DesktopScreen type="image" src="/portfolio-assets/east_end_homepage.png"/>
+      <a href="/portfolio/east-end-salon" class="tc link black">
+        <DesktopScreen type="image" src="/portfolio-assets/east_end_homepage.jpg"/>
         <h4>East End Salon</h4>
       </a>
 
-      <a href="#" class="tc link black grow">
+      <a href="/portfolio/marketo-landing-page-template" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/infogix_marketo_event_lp_top.gif"/>
         <h4>Marketo Landing Page Template</h4>
       </a>
@@ -64,7 +64,22 @@
 </template>
 
 <style scoped>
-@media screen and (min-width: 1024px) {
+.grid a {
+  transition: all 300ms ease-in-out;
+}
+.grid a:hover {
+  transform: scale(1.1);
+}
+@media screen and (min-width: 30rem) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: '. .' '. .';
+    grid-gap: 1rem;
+  }
+}
+@media screen and (min-width: 60rem) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
