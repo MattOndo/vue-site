@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1>Matt's Portfolio</h1>
-    <div class="bg-light-yellow tc br br1">
+    <div class="bg-light-yellow tc br br1 bw0">
       <p class="black">
         <em>Please excuse me, this is a work in progress!</em>
       </p>
