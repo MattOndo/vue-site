@@ -1,9 +1,22 @@
 <template>
   <Layout>
-    <header>
+    <header class="cf w-100">
       <h1 class="mb1">Matt Ondo</h1>
-      <p class="mv0 f5 fw1">Web Developer</p>
-      <p class="mt0 f6 fw1">Denver, CO</p>
+      <div class="w-50-ns fl">
+        <p class="mv0 f5 fw1">Sr. Front-end Web Developer</p>
+        <p class="mt0 f6 fw1">Denver, CO</p>
+      </div>
+      <div class="w-50-ns fr">
+        <p class="mv0 tr">
+          <a href="tel:+7209985398" class="no-underline black fw1 f6">720-998-5398</a>
+        </p>
+        <p class="mv0 tr">
+          <a
+            href="mailto:yours.truly@mattondo.com"
+            class="no-underline black fw1 f6"
+          >yours.truly@mattondo.com</a>
+        </p>
+      </div>
     </header>
 
     <section id="experience">
@@ -12,22 +25,36 @@
       </header>
       <article>
         <header>
-          <h3 class="mb0">Senior Front-End Developer, Intelligent Demand</h3>
-          <p class="mt1">February, 2015 - Present</p>
+          <h3 class="mb0">
+            Senior Front-End Developer, Intelligent Demand
+            <span
+              class="fw1 f7 fr"
+            >June, 2018 - Present</span>
+          </h3>
+          <h3 class="mb0 mt0">
+            Demand Generation Web Developer, Intelligent Demand
+            <span
+              class="fw1 f7 fr"
+            >February, 2015 - June, 2018</span>
+          </h3>
         </header>
         <p>Plays a critical role in the Front-End Development practice at ID and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing and deployment of interactive content and websites using WordPress and other CMS platforms.</p>
       </article>
       <article>
         <header>
-          <h3 class="mb0">Lead Web Developer, Grayson Sky</h3>
-          <p class="mt1">May 2014 - Oct 2016</p>
+          <h3 class="mb0">
+            Lead Web Developer, Grayson Sky
+            <span class="fw1 f7 fr">May 2014 - Oct 2016</span>
+          </h3>
         </header>
         <p>Developed and managed multiple projects. Managed the development team, produced and presented scopes to perspective clients. Assisted in the design of websites and other branding aspects. Used a custom front end framework for rapid development.</p>
       </article>
       <article>
         <header>
-          <h3 class="mb0">Freelance Web Developer</h3>
-          <p class="mt1">Dec 2010 - May 2014</p>
+          <h3 class="mb0">
+            Freelance Web Developer
+            <span class="fw1 f7 fr">Dec 2010 - May 2014</span>
+          </h3>
         </header>
         <p>Designed and developed custom websites for small businesses. Worked with key stakeholders to determine timelines, milestones, and objectives.</p>
       </article>
@@ -81,7 +108,10 @@
           class="black no-underline hover-blue"
           href="https://www.linkedin.com/in/mattondo/"
           target="_blank"
-        >Learn more about me on LinkedIn</a>
+        >Learn more about me on LinkedIn ↗️</a>
+        <span
+          class="dn dp fw1 mt4"
+        >View my certifications, and learn more about me at www.mattondo.io</span>
       </h5>
     </section>
   </Layout>
@@ -129,14 +159,21 @@ section article {
 }
 
 @media print {
+  body:after {
+    opacity: 0.05;
+  }
   a {
-    font-weight: bold;
-    color: #000;
     text-decoration: none;
   }
-  #app > header *,
-  #app > footer *,
-  #learnMore,
+  p {
+    margin: 12px 0;
+  }
+  h1 {
+    margin-top: 30px;
+  }
+  #app > header,
+  #app > footer,
+  #learnMore a,
   #certifications a {
     display: none !important;
   }
@@ -144,6 +181,9 @@ section article {
     font-size: 14px;
     padding: 0 50px;
     background-repeat: no-repeat;
+  }
+  .dp {
+    display: block;
   }
   @page {
     margin: 0;

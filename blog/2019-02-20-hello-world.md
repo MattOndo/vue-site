@@ -8,7 +8,7 @@ tags: 'code website'
 status: 'published'
 ---
 
-I don't consider myself a blogger&ndash;and I never will. I definitely don't consider myself a writer by any means. I'm a developer, and after years of neglecting my own website I've decided to do something about it. You'll have to forgive me for my terrible writing skills, and the spontaneous and infrequent posting of new content here moving forward. But hey, I'm going to give it a go! So for my first post, lorem ipsum.
+I don't consider myself a blogger or a writer by any means. I'm a developer, and after years of neglecting my own website I've decided to do something about it. You'll have to forgive me for my terrible writing skills, and the spontaneous and infrequent posting of new content here moving forward. But hey, I'm going to give it a go! This first post is (selfishly) for my own benefit and used to dial in my typography styles.
 
 # Heading 1
 
@@ -44,8 +44,7 @@ _This is italic text_
 
 ## Lists
 
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
+- Sub-lists:
   - Marker character change forces new list start:
     - Ac tristique libero volutpat at
     - Facilisis in pretium nisl aliquet
@@ -57,9 +56,6 @@ _This is italic text_
 3. Integer molestie lorem at massa
 
 ## Code
-
-Inline `code`
-Block code "fences"
 
 ```
 Sample text here...
