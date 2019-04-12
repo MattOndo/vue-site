@@ -44,7 +44,7 @@
         <header>
           <h3 class="mb0">
             Lead Web Developer, Grayson Sky
-            <span class="fw1 f7 fr">May 2014 - Oct 2016</span>
+            <span class="fw1 f7 fr">May 2014 - Oct 2015</span>
           </h3>
         </header>
         <p>Developed and managed multiple projects. Managed the development team, produced and presented scopes to perspective clients. Assisted in the design of websites and other branding aspects. Used a custom front end framework for rapid development.</p>
