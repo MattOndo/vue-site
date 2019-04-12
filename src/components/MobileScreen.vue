@@ -74,8 +74,8 @@ export default {
   border-radius: 25px;
 }
 .darkMode .device {
-  background: #d0d0d0;
-  border: 5px solid #d0d0d0;
+  background: #d3d3d3;
+  border: 5px solid #d3d3d3;
 }
 .device-header,
 .device-footer {

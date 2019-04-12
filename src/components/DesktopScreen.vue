@@ -97,12 +97,12 @@ export default {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background: #d0d0d0;
+  background: #d3d3d3;
   margin-right: 5px;
 }
 .darkMode .device {
-  background: #d0d0d0;
-  border: 5px solid #d0d0d0;
+  background: #d3d3d3;
+  border: 5px solid #d3d3d3;
 }
 .darkMode .device-header span {
   background: #333;

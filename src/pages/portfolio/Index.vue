@@ -1,8 +1,10 @@
 <template>
   <Layout>
     <h1>Matt's Portfolio</h1>
-    <div class="bg-light-yellow tc">
-      <p class="black">Please excuse me, this is a work-in-progress!</p>
+    <div class="bg-light-yellow tc br br1">
+      <p class="black">
+        <em>Please excuse me, this is a work in progress!</em>
+      </p>
     </div>
     <div class="grid">
       <a href="/portfolio/interactive-email" class="tc link black">
