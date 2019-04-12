@@ -13,16 +13,27 @@
       <DesktopScreen
         src="/portfolio-assets/servicesource_jp_homepage.jpg"
         type="image"
-        scroll="true"
+        :scroll="true"
+        :duration="30"
       />
     </figure>
 
     <div class="w-100 flex flex-column flex-row-ns justify-between items-center">
-      <article class="fw1 lh-copy w-100">
-        <p class="cm-col-2">Words here</p>
+      <article class="fw1 lh-copy w-100 w-60-ns">
+        <p>ServiceSource was very happy with our work on migrating their English website to Wordpress, shortly after the project was closed they asked us to help with cloning and translating the English site to be used by their team in Japan. We graciously accpeted this project, which was challenging and rewarding. My role was to manage the technical aspects of the project, as well as our contractors. We worked closely with multiple translation companies over the timeline of the project to ensure the most accurate translation possible. Not everything was included when copying over from English to Japenese, as some pages and offerings just didn't apply to the team over in Japan.</p>
+        <p>Similar to the English website we completed mearly months prior, the end result is a beautiful website which ServiceSource Japan's team is able to maintain without assistance. Having never developed a website in a language other than English, this was an eye opening experience for me. I genuinely enjoyed our late night meetings with a team accross the world, and am thankful for a glimpse into their culture.</p>
       </article>
+      <aside class="w-100 w-33-ns">
+        <h4>WordPress Stack</h4>
+        <ul class="f6">
+          <li>Theme: BeTheme</li>
+          <li>Page Builder: Muffin Builder (by BeTheme)</li>
+          <li>Custom Post Types for Resources, Leadership, and Guest Authors</li>
+          <li>Built on Pantheon Managed Wordpress Hosting</li>
+        </ul>
+      </aside>
     </div>
-    <div class="self-end fw1 f7">Built with HTML5 // CSS3 // JavaScript // jQuery</div>
+
     <div class="mt3">
       <BackButton/>
     </div>
@@ -44,7 +55,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: ''
+          content: 'The ServiceSource tale, part 2: a website translation.'
         }
       ],
       script: [

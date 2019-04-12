@@ -1,15 +1,18 @@
 <template>
   <Layout>
     <h1>Matt's Portfolio</h1>
+    <div class="bg-light-yellow tc">
+      <p class="black">Please excuse me, this is a work-in-progress!</p>
+    </div>
     <div class="grid">
       <a href="/portfolio/interactive-email" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/id_2017_interactive_holiday_thumb.png"/>
         <h4>Interactive Invite Email</h4>
       </a>
 
-      <a href="#" class="tc link black">
+      <a href="/portfolio/intelligent-demand-website" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/intelligentdemand_landing.png"/>
-        <h4>Intelligent Demand Website</h4>
+        <h4>Intelligent Demand</h4>
       </a>
 
       <a href="/portfolio/interactive-infographic" class="tc link black">
@@ -17,27 +20,17 @@
         <h4>Interactive Infographic</h4>
       </a>
 
-      <a href="#" class="tc link black">
-        <DesktopScreen type="image" src/>
-        <h4>Hubspot Landing Page Template</h4>
-      </a>
-
       <a href="/portfolio/service-source-en" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/servicesource_en.jpg"/>
-        <h4>Service Source Website</h4>
+        <h4>Service Source</h4>
       </a>
 
       <a href="/portfolio/service-source-jp" class="tc link black">
         <DesktopScreen type="image" src="/portfolio-assets/servicesource_jp.jpg"/>
-        <h4>Service Source Japanese Website</h4>
+        <h4>Service Source Japan</h4>
       </a>
 
-      <a href="#" class="tc link black">
-        <DesktopScreen type="image" src/>
-        <h4>Interactive Assessment</h4>
-      </a>
-
-      <a href="#" class="tc link black">
+      <a href="/portfolio/marketo-email-template" class="tc link black">
         <DesktopScreen
           type="image"
           src="/portfolio-assets/id_marketo_email_template_desktop_top.png"
@@ -45,8 +38,8 @@
         <h4>Marketo Email Template</h4>
       </a>
 
-      <a href="#" class="tc link black">
-        <DesktopScreen type="image" src="/portfolio-assets/id_2018_holiday_lp.png"/>
+      <a href="/portfolio/interactive-story-book" class="tc link black">
+        <DesktopScreen type="image" src="/portfolio-assets/id_2018_holiday_lp.jpg"/>
         <h4>Interactive Story Book</h4>
       </a>
 

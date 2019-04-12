@@ -15,12 +15,16 @@
 
     <div class="w-100 flex flex-column flex-row-ns justify-between items-center">
       <article class="fw1 lh-copy w-100 w-60-ns">
-        <p>The East End Salon website project was only a small part in a total rebranding effort. Our team consisted of designers, copywriters, media strategiest, and my small team of two developers. The objectives of the project focused on a brand refresh, an increased web and social presense, as well as change in their focused audience.</p>
+        <p>The East End Salon website project was only a small part in a total re-branding effort. Our team consisted of designers, copywriters, media strategists, and my small team of developers. The objectives of the project focused on a brand refresh, increased web and social presense, as well as a change in their focused audience.</p>
         <p>The website had very few requirements, simply to act as a static brochure site for the small East End Salon located in Old City, Philadelphia. They also wanted to promote their First Friday event, Snippet &amp; Frame.</p>
       </article>
 
       <figure class="ma0 nt6-ns mr4-ns w-60 w-30-ns">
-        <MobileScreen src="/portfolio-assets/east_end_homepage_mobile.jpg"/>
+        <MobileScreen
+          src="/portfolio-assets/east_end_homepage_mobile.jpg"
+          type="image"
+          :scroll="false"
+        />
       </figure>
     </div>
     <div class="self-end fw1 f7">Built with HTML5 // CSS3 // JavaScript // jQuery</div>
@@ -45,7 +49,8 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: ''
+          content:
+            'Aboput the East End Salon website project, and my involvment.'
         }
       ],
       script: [

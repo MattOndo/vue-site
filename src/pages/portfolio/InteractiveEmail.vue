@@ -27,26 +27,23 @@
 
     <div class="flex flex-column flex-row-ns">
       <article class="fw1 w-100 w-60-ns lh-copy measure">
-        <p>Intelligent Demand had just moved to a new building, to celebrate we invited our friends to come check out our new digs and help us decarate the office with hilariously gaudy nic-nacs. To promote the new building, our party, and our marketing chops we designed and developed this interactive email invitation.</p>
-        <p>The email was built in Marketo, the interactive portion was built as a Marketo Email 2.0 Module. This allowed us to utlize our existing email template, giving us more time to focus on the interactive portion. Our goals were simple, create something badass, and get as many RSVPs as possible.</p>
-        <p>For more progressive email clients such as iOS and Apple Mail, the email utilizes four checkboxes to allow the viewer to open or close each window when clicked. In Gmail and other (what I call "semi-progressive") clients, hovering over a window "opens" it. In all other email clients such as various versions of Outlook the animated GIF is the only thing that shows, clicking on the gif sends the user to the web-based version so they can enjoy the interactivity.</p>
-        <p>In an effort to make RSVP'ing a breeze, we put RSVP Yes and No buttons right there in the email. Don't worry, this can always be changed later on.</p>
+        <p>Intelligent Demand had just moved to a new building, to celebrate we invited our friends to come check out our new digs and help us decorate the office with hilariously gaudy nic-nacs. To promote the new building, our party, and our marketing chops we designed and developed this interactive invitation email.</p>
+        <p>The email was built in Marketo, the interactive portion was built as a Marketo Email 2.0 Module. This allowed us to utlize our existing email template, giving us more time to focus on the interactive portion. Our goals were simple, create something badass and get as many RSVPs as possible.</p>
+        <p>For more progressive email clients such as iOS and Apple Mail, the email utilizes four checkboxes to allow the viewer to open or close each window when clicked. In Gmail and other (what I call "semi-progressive") clients, hovering over a window "opens" it. In all other email clients such as some versions of Outlook the animated GIF is the only thing that shows, clicking on the image takes the user to the web-based version so they can get the full experience.</p>
+        <p>To make RSVP'ing a breeze we included RSVP Yes and No buttons right there in the email. Don't worry, this can always be changed later on.</p>
         <h4 class="lh-title mb0">Results</h4>
         <p class="mt1">
-          In the end the email had an open rate of 60.9%, a 24.5% click rate, and 13% of the recipients RSVP'd yes. The party was a blast, and we proved to ourselves
-          <em>this is possible</em>.
+          In the end the email had an open rate of 60.9%, a 24.5% click rate, and 13% of the recipients RSVP'd yes. The party was a blast, and we proved
+          <em>interactive emails are awesome</em>.
         </p>
       </article>
       <figure class="ma0 w-90 center w-20-ns z-999">
-        <div
-          style="
-          position: -webkit-sticky;
-          position: sticky;
-          top: 30px;"
-        >
+        <div class="sticky">
           <MobileScreen
             src="/portfolio-assets/id_2017_interactive_holiday_mobile.png"
-            scroll="true"
+            type="image"
+            :scroll="true"
+            :duration="20"
           />
         </div>
       </figure>
@@ -71,7 +68,7 @@ export default {
         {
           key: 'description',
           name: 'description',
-          content: ''
+          content: 'How Matt and Intelligent Demand pushed the limits of email.'
         }
       ],
       script: [
