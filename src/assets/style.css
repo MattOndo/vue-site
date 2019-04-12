@@ -638,6 +638,12 @@ pre[class*='language-']::-webkit-scrollbar-thumb {
   Helpers
 --------------------------------- */
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+}
+
 @media screen and (min-width: 30rem) {
   .cm-col-2 {
     -webkit-column-count: 2;
