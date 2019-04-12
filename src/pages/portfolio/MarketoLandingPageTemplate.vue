@@ -5,7 +5,7 @@
       <div class="mb3">
         <span class="f7 fw1">Marketo Guided Landing Page Template</span> //
         <span class="f7 fw1">Sr. Front-End Developer</span> //
-        <span class="f7 fw1">2016</span>
+        <span class="f7 fw1">2018</span>
       </div>
     </header>
 
