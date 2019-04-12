@@ -10,7 +10,7 @@
         class="device-screen--image"
         v-bind:class="doScroll"
         v-if="type == 'image'"
-        :style="{'background-image': 'url(' + src + ')'}"
+        :style="imgStyle"
       ></div>
       <div class="device-screen--video" v-else-if="type == 'video'">
         <video class="w-100" controls>
@@ -24,7 +24,21 @@
 <script>
 export default {
   name: 'DesktopScreen',
-  props: ['src', 'type', 'scroll'],
+  props: {
+    src: String,
+    type: String,
+    scroll: Boolean,
+    duration: Number
+  },
+  data: function() {
+    return {
+      imgStyle: {
+        'background-image': 'url(' + this.src + ')',
+        '-webkit-animation-duration': this.duration + 's',
+        'animation-duration': this.duration + 's'
+      }
+    }
+  },
   computed: {
     doScroll: function() {
       return this.scroll ? 'scroll' : ''
@@ -97,6 +111,8 @@ export default {
   padding-bottom: 56.25%;
   background-size: cover;
   background-position: top center;
+}
+.device-screen--image.scale {
 }
 .device-screen--image.scroll {
   background-size: 100%;
