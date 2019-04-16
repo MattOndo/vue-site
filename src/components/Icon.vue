@@ -7,7 +7,7 @@
     x="0px"
     y="0px"
     viewBox="0 0 270 270"
-    style="enable-background:new 0 0 270 270;"
+    :style="{'enable-background':'new 0 0 270 270;','width':logoWidth}"
     xml:space="preserve"
     :width="logoWidth"
   >
