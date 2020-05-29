@@ -7,10 +7,10 @@
       >Located in Denver, CO I spend as much time as possible playing in the Rocky Mountains. In the winter you can find me out on the slopes skiing. In the summer I enjoy mountain biking, camping, hiking, anything that gets me in the sun.</p>
       <p
         class="lh-copy"
-      >When I'm not playing in the mountains I'm geeking out. Currently I am the Senior Front-End Developer at Intelligent Demand where I've been employed since February, 2015. As a Senior Front-End Developer, I play a critical role in the Front-End Development practice area and own the conversion of original visual design concepts to bulletproof front-end implementations. I have experience in building, testing and deploying multi-touch, multi-channel marketing campaigns in marketing automation platform software. Additionally, I own the buildout, testing, and deployment of interactive content and websites using WordPress and other Interactive and CMS platforms.</p>
+      >When I'm not playing in the mountains I'm geeking out. In September of 2019 I joined the EverCommerce digital marketing team where I have been leading the Front-end Web Development team in building, maintaining, and optimizing digital assets and websites for our wide and growing portfolio of companies.</p>
       <p
         class="lh-copy"
-      >Most recently I've been fiddling around with the Vue.js framework and Gridsome static site generator – this website is built using this very stack.</p>
+      >I wish you and your families well in this crazy time we find ourselves in. Stay safe!</p>
     </article>
     <div class="grid">
       <div v-for="(gram, i) in grams" v-if="i<=limit-1" :key="i">
