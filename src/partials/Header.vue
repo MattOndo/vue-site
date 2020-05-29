@@ -15,10 +15,10 @@
           class="pa2 no-underline f5 f4-l fw3 ttl dark-gray black-hover dib sandbox"
           :to="{ name: 'sandbox' }"
         >sandbox</g-link>
-        <g-link
+        <!-- <g-link
           class="pa2 no-underline f5 f4-l fw3 ttl dark-gray black-hover dib portfolio"
           :to="{ name: 'portfolio' }"
-        >portfolio</g-link>
+        >portfolio</g-link> -->
         <g-link
           class="pa2 no-underline f5 f4-l fw3 ttl dark-gray black-hover dib"
           :to="{ name: 'contact' }"
